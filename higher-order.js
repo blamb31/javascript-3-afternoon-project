@@ -162,7 +162,5 @@ let bobsTotal = purchases.filter(function(tab) {
   return acc + elem2
 })
 
-bobsTotal
-
 
 
