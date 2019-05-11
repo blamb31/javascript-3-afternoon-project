@@ -148,6 +148,10 @@ var myCar = {
     }
   ]
 }
+
+// myCar.accidents[0].atFaultForAccident 
+// test = myCar.accidents[0].atFaultForAccident = false
+// test
 // Do not edit the code above.
 
 /*
@@ -160,6 +164,15 @@ var myCar = {
 */
 
 //Code Here
+
+function recordCleaner () {
+  for (let i = 0; i < myCar.accidents.length; i++) {
+    if(myCar.accidents[i].atFaultForAccident === true) {
+      myCar.accidents[i].atFaultForAccident = false
+    }
+  }
+  return myCar
+}
 
 
 
@@ -178,6 +191,22 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
     4. Return the modified numsArr.
 */
 
+
 //Code Here
+
+function looper () {
+  for(let i = 0; i < numsArr.length; i++) {
+    let num = numsArr[i]
+    for (let j = 0; j < numsArr[i].length; j++) {
+      if (numsArr[i][j] % 2 === 0) {
+        numsArr[i][j] = "even"
+      }
+      else {
+        numsArr[i][j] = "odd"
+      }
+    }
+  }
+  return numsArr
+}
 
 
